@@ -22,10 +22,18 @@ export const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const cartItems = useSelector((state) => state.cart.cartItems);
 
-  const { currentUser, logout } = useAuth();
+  const { currentUser, logout, logoutAsgardeo } = useAuth();
 
   const handleLogOut = () => {
-    logout();
+    try {
+      if (currentUser.provider === "asgardeo") {
+        logoutAsgardeo();
+      } else {
+        logout();
+      }
+    } finally {
+      setIsDropdownOpen(false);
+    }
   };
 
   return (

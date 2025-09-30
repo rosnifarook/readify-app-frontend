@@ -15,6 +15,7 @@ import Dashboard from "../pages/dashboard/Dashboard.jsx";
 import ManageBooks from "../pages/dashboard/manageBooks/ManageBooks.jsx";
 import AddBook from "../pages/dashboard/addBooks/AddBook.jsx";
 import UpdateBook from "../pages/dashboard/editBook/UpdateBook.jsx";
+import AuthCallback from "../pages/AuthCallback.jsx";
 
 const router = createBrowserRouter([
   {
@@ -62,6 +63,10 @@ const router = createBrowserRouter([
         element: <SingleBook />,
       },
     ],
+  },
+  {
+    path: "/auth/callback",
+    element: <AuthCallback />,
   },
   {
     path: "/admin",

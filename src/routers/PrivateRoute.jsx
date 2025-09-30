@@ -6,7 +6,11 @@ const PrivateRoute = ({ children }) => {
   const { currentUser, loading } = useAuth();
 
   if (loading) {
-    return <div>Loading...</div>;
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <span className="text-lg">Checking authentication...</span>
+      </div>
+    );
   }
 
   if (currentUser) {

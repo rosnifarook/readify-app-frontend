@@ -3,10 +3,13 @@ import { Link, useNavigate } from "react-router-dom";
 import { FaGoogle } from "react-icons/fa";
 import { useForm } from "react-hook-form";
 import { useAuth } from "../context/AuthContext";
+import asgardeoLogo from "../assets/asgardeo.svg";
+
+//C:\Users\rosni\Desktop\Projects\readify-mern-project\frontend\src\assets\asgardeo.svg
 
 const Login = () => {
   const [message, setMessage] = useState("");
-  const { loginUser, signInWithGoogle } = useAuth();
+  const { loginUser, signInWithGoogle, signInWithAsgardeo } = useAuth();
   const navigate = useNavigate();
   const {
     register,
@@ -14,6 +17,15 @@ const Login = () => {
     watch,
     formState: { errors },
   } = useForm();
+
+  const handleAsgardeoSignIn = async () => {
+    try {
+      await signInWithAsgardeo(); // will redirect
+    } catch (e) {
+      alert("Asgardeo sign in failed!");
+      console.error(e);
+    }
+  };
 
   const onSubmit = async (data) => {
     try {
@@ -91,14 +103,23 @@ const Login = () => {
           </Link>
         </p>
 
-        {/*Google Sign-in*/}
         <div>
+          {/*Google Sign-in*/}
           <button
             onClick={handleGoogleSignIn}
-            className="flex items-center justify-center w-full gap-2 px-4 py-2 font-bold text-white rounded bg-secondary hover:bg-blue-700 focus:outline-none"
+            className="flex items-center justify-center w-full gap-2 px-4 py-2 font-bold text-black bg-gray-300 rounded hover:bg-blue-700 focus:outline-none"
           >
             <FaGoogle />
             <span>Sign in with Google</span>
+          </button>
+
+          {/*Asgardeo Sign-in*/}
+          <button
+            onClick={handleAsgardeoSignIn}
+            className="flex items-center justify-center w-full gap-2 px-4 py-2 mt-4 font-bold text-black bg-gray-300 rounded hover:bg-blue-700 focus:outline-none"
+          >
+            <img src={asgardeoLogo} alt="Asgardeo" width={20} height={20} />
+            <span>Sign in with Asgardeo</span>
           </button>
         </div>
         <p className="mt-5 text-xs text-center text-gray-500">

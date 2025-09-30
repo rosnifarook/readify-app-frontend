@@ -96,7 +96,7 @@ const Register = () => {
         <div>
           <button
             onClick={handleGoogleSignIn}
-            className="flex items-center justify-center w-full gap-2 px-4 py-2 font-bold text-white rounded bg-secondary hover:bg-blue-700 focus:outline-none"
+            className="flex items-center justify-center w-full gap-2 px-4 py-2 font-bold text-black bg-gray-300 rounded hover:bg-blue-700 focus:outline-none"
           >
             <FaGoogle />
             <span>Sign in with Google</span>
