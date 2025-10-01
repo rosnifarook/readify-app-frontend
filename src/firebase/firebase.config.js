@@ -6,12 +6,12 @@ import { getAuth } from "firebase/auth"
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: window?.configs?.VITE_API_KEY || import.meta.env.VITE_API_KEY,
-  authDomain: window?.configs?.VITE_AUTH_DOMAIN || import.meta.env.VITE_AUTH_DOMAIN,
-  projectId: window?.configs?.VITE_PROJECT_ID || import.meta.env.VITE_PROJECT_ID,
-  storageBucket: window?.configs?.VITE_STORAGE_BUCKET || import.meta.env.VITE_STORAGE_BUCKET,
-  messagingSenderId: window?.configs?.VITE_MESSAGING_SENDERID || import.meta.env.VITE_MESSAGING_SENDERID,
-  appId: window?.configs?.VITE_APPID || import.meta.env.VITE_APPID,
+  apiKey: window.configs.firebase.apiKey,
+  authDomain: window.configs.firebase.authDomain,
+  projectId: window.configs.firebase.projectId,
+  storageBucket: window.configs.firebase.storageBucket,
+  messagingSenderId: window.configs.firebase.messagingSenderId,
+  appId: window.configs.firebase.appId,
 };
 
 console.log("Firebase API key:", import.meta.env.VITE_API_KEY);
