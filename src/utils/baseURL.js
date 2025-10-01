@@ -1,5 +1,5 @@
 const getBaseUrl = () => {
-    return "https://readify-app-backend.vercel.app"
+    return import.meta.env.VITE_BASE_URL || "http://localhost:5000";
 }
 
 export default getBaseUrl
