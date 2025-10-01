@@ -12,8 +12,8 @@ window.configs = {
     clientID: "LAps4qNc2veXCr_gVG_ValHtcnUa",
     baseUrl: "https://api.asgardeo.io/t/rosnifarook25",
     redirectUrl:
-      "https://cb75a9d2-f157-490d-90c2-272859c4efa5.e1-us-east-azure.choreoapps.dev/auth/callback",
+      "https://b3d40df9-4c95-4361-a862-4a49ae5c5af1.e1-us-east-azure.choreoapps.dev/auth/callback",
     logoutUrl:
-      "https://cb75a9d2-f157-490d-90c2-272859c4efa5.e1-us-east-azure.choreoapps.dev"
+      "https://b3d40df9-4c95-4361-a862-4a49ae5c5af1.e1-us-east-azure.choreoapps.dev"
   }
 };
