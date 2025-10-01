@@ -14,7 +14,6 @@ const firebaseConfig = {
   appId: window.configs.firebase.appId,
 };
 
-console.log("Firebase API key:", import.meta.env.VITE_API_KEY);
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
