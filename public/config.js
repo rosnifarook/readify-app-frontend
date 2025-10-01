@@ -1,0 +1,18 @@
+window.configs = {
+  VITE_API_KEY: "AIzaSyCMvhIuK43CORY_Okc_5NbNhY5oJw6ZlVE",
+  VITE_AUTH_DOMAIN: "readify-book-store.firebaseapp.com",
+  VITE_PROJECT_ID: "readify-book-store",
+  VITE_STORAGE_BUCKET: "readify-book-store.appspot.com",
+  VITE_MESSAGING_SENDERID: "214549260139",
+  VITE_APPID: "1:214549260139:web:ebcbdfd66920834aa18e2e",
+
+  VITE_BASE_URL:
+    "https://ab3a976d-62ad-43b9-9125-39b25e8e8e90-prod.e1-us-east-azure.choreoapis.dev/default/readify-backend/v1.0",
+
+  VITE_ASGARDEO_CLIENT_ID: "8eqotwYJ8B9h9wCOOp9s5HfK0tQa",
+  VITE_ASGARDEO_BASE_URL: "https://api.asgardeo.io/t/rosnifarook",
+  VITE_ASGARDEO_REDIRECT_URL:
+    "https://d15ff7ed-a7a4-488b-bf5b-b4b40396ea47.e1-us-east-azure.choreoapps.dev/auth/callback",
+  VITE_ASGARDEO_LOGOUT_URL:
+    "https://d15ff7ed-a7a4-488b-bf5b-b4b40396ea47.e1-us-east-azure.choreoapps.dev",
+};

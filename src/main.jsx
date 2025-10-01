@@ -18,10 +18,10 @@ createRoot(document.getElementById("root")).render(
   //1st First step to use AsgardeoAuthProvider is to wrap the app with the provider component
   <AsgardeoAuthProvider
     config={{
-      signInRedirectURL: import.meta.env.VITE_ASGARDEO_REDIRECT_URL,
-      signOutRedirectURL: import.meta.env.VITE_ASGARDEO_LOGOUT_URL,
-      clientID: import.meta.env.VITE_ASGARDEO_CLIENT_ID,
-      baseUrl: import.meta.env.VITE_ASGARDEO_BASE_URL,
+      signInRedirectURL: window.configs.asgardeo.redirectUrl,
+      signOutRedirectURL: window.configs.asgardeo.logoutUrl,
+      clientID: window.configs.asgardeo.clientID,
+      baseUrl: window.configs.asgardeo.baseUrl,
       scope: ["openid", "profile"],
     }}
   >
